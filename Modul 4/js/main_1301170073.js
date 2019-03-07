@@ -48,17 +48,21 @@ var tampil=" ";
         dataType : "json",
         success : function(data){
 
-            $.each(data.function(index,obj) {
-                tampil = '<span class="elemen-title">// Skill Name</span>'+
+            $.each(data,function(index,obj){
+                tampil = '<span class="elemen-title">'+obj.skills.namaa+'</span>'+
                         '<div class="elementor-proggress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" aria-valuetext="">'+
-                            '<div class="elementor-proggress-bar" data-max">'+
-                                '<div class = '
+                            '<div class="elementor-proggress-bar" data-max="'+obj.skills.persen+'">'+
+                                '<span class ="elementor-progress-text"></span>'+
+                                '<span class ="elementor-progress-percentage></span>'+
+                            '</div>'+
+                        '</div>';
+            $(".skill").append(tampil);
 
             });
         }
-    })
+    });
 
 /*-------------------------------------
     End Of $.ajax function
 ---------------------------------------*/
-})
+});

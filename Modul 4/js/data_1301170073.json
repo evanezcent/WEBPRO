@@ -39,12 +39,9 @@
         "skills":
         [
             {
-                "satu" : "Pascal, Java, C++",
-                "persen1" : "60",
-                "dua" : "HTML, CSS, JavaScript",
-                "persen2" : "40",
-                "tiga" : "Python",
-                "persen3" : "30"
+                "namaa" : "Pascal, Java, C++",
+                "persen" : "60"
+
             }
         ]
     }
