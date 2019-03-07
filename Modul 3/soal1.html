@@ -1,0 +1,62 @@
+<html>
+<title>Nomor 1 - 1301170073</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/soal1.css">
+</head>
+<body>
+<h2>Selamat datang ke Jurnal Modul 3!</h2>
+<p>Jangan lupa mulai praktikum terlebih dahulu di Impulsenya.</p>
+<p>Bila ada pertanyaan silahkan hubungi asprak terdekat, terima kasih.</p>
+
+<h1 id="nama"></p>
+<h1 id="nim"></p>
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+<div class="form-popup" id="FormPopUp">
+  <form class="form-container">
+    <h3>Login</h3>
+    <button type="button" class="btn" onclick="callform()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+  var x = document.getElementById("FormPopUp");
+  var y = document.getElementsByClassName("open-button");
+
+  var z = document.getElementsByClassName("btn cancel")[0];
+
+  function openForm()
+  {
+    x.style.display = "block";
+  }
+
+  function closeForm()
+  {
+    x.style.display ="none";
+  }
+
+  windows.onclick = function(event) {
+  if (event.target == x) {
+    x.style.display = "none";
+  }
+  }
+
+  function callform()
+  {
+    var nama = prompt("Input Nama Kamu : ");
+    var nim = prompt("Input NIM Kamu : ");
+    var tx1 = "Halo "+nama;
+    var tx2 = "NIM "+nim+" Terdeteksi di Database Telkom University";
+    if ((nama != null) && (nim != null))
+    {
+      document.getElementById("nama").innerHTML = tx1;
+      document.getElementById("nim").innerHTML = tx2;
+    } 
+  }
+
+</script>
+
+</body>
+</html>

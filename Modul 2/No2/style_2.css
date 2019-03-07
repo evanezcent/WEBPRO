@@ -1,0 +1,24 @@
+.first
+{
+    background-image: linear-gradient(90deg,red,yellow);
+}
+.second
+{
+    background: url(foto_1.png) no-repeat;
+    width: 500px;
+    height: 600px;
+}
+
+.second:hover
+{
+    background: url(foto_2.png) no-repeat;
+    cursor: pointer;
+    width: 500px;
+    height: 600px;
+}
+.third
+{
+    background-image: repeating-radial-gradient(
+        circle at 0 0, #eee, #ccc 50px
+    );
+}

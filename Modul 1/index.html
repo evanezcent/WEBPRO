@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>- 1301170073 -</title>
+		<style>
+			h1
+			{
+				font-family: fantasy;color: darkred;
+			}
+		</style>
+    </head>
+	<body>
+
+		<h1>Jurnal Modul 1</h1>
+		<form action="index2.html" method="POST">
+			<table border="0" width="200">
+				<tr>
+					<td>Nama Lengkap</td>
+					<td> : </td>
+					<td width="900"><input type="text" name="Nama Lengkap" class="text-field" id="Fullname" placeholder="Nama Lengkap" value="Pratama Yoga Santosa" readonly/></td>
+				</tr>
+
+				<tr>
+					<td>Nama Panggilan</td>
+					<td> : </td>
+					<td width="900"> <input type="text" name="Nama Panggilan" class="text-field" id="Nickname" placeholder="Panggilan" value="Tama" disabled> </td>
+				</tr>
+
+				<tr>
+					<td>Username</td>
+					<td> : </td>
+					<td width="900"> <input type="text" name="Username" class="text-field" id="uname" placeholder="Username" value="" required> </td>
+				</tr>
+
+				<tr>
+					<td>Email</td>
+					<td> : </td>
+					<td width="900"> <input type="email" name="Email" class="text-field" id="e-mail" placeholder="Email" value="" required> </td>
+				</tr>
+
+				<tr>
+					<td>Password</td>
+					<td> : </td>
+					<td width="900"> <input type="password" name="Password" class="text-field" id="pasw" placeholder="Password" value="" required> </td>
+				</tr>
+
+				<tr>
+					<td>Jenis Kelamin</td>
+					<td> : </td>
+					<td> 
+						<input type="radio" name="jk_input" class="radioB" id="RB_id" value="Cowok"> Cowok </input> 
+						<input type="radio" name="jk_input" class="radioB" id="RB_id" value="Cewek"> Cewek </input>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Hobi</td>
+					<td> : </td>
+					<td>
+						<input type="checkbox" name="hobi_input" class="cxBox" id="cxBox_id" value="Ngoding"> Ngoding </input> <br/>
+						<input type="checkbox" name="hobi_input" class="cxBox" id="cxBox_id" value="Denger Musik"> Denger Musik </input> <br/>
+						<input type="checkbox" name="hobi_input" class="cxBox" id="cxBox_id" value="Ngegame"> Ngegame </input> <br/>
+						<input type="checkbox" name="hobi_input" class="cxBox" id="cxBox_id" value="Membaca"> Membaca </input> <br/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Jurusan</td>
+					<td> : </td>
+					<td>
+							<select multiple name="jurusan" class="jurusan" id="jurusan_id">
+									<option value="iF"> Informatika </option>
+									<option value="sK"> Sistem Komputer </option>
+									<option value="eL"> Teknik Elektro </option>
+									<option value="sI"> Sistem Informasi </option>
+									<option value="tI"> Teknik Industri </option>
+							</select> 
+					</td>
+				</tr>
+
+				<tr>
+					<td>Pendidikan Terakhir</td>
+					<td> : </td>
+					<td>
+						<select name="pendidikan" class="opsiPendidikan" id="pendidikan_id">
+							<option value="" selected> --- Pilih --- </option>
+
+							<option value="SD"> SD </option>
+							<option value="SMP"> SMP </option>
+							<option value="SMA"> SMA </option>
+							<option value="D3"> D3 </option>
+							<option value="S1"> S1 </option>
+						</select> 
+					</td>
+				</tr>
+
+				<tr>
+					<td>Upload Foto</td>
+					<td> : </td>
+					<td> <input type="file" class="uploader" id="uploader_id"> </td>
+				</tr>
+
+				<tr>
+					<td>Alamat</td>
+					<td> : </td>
+					<td> <textarea rows="7" cols="50%"></textarea> </td>
+				</tr>
+
+				<tr>
+					<td colspan="3" >
+							<input type="submit" name="submit" class="submit_btn" id="submit_id" value="Submit"/>
+
+					</td>
+				</tr>
+			</table>
+		</form>
+    
+
+	</body>
+</html>

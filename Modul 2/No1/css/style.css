@@ -1,0 +1,158 @@
+/* Browser reset & Basic styling [Don't ruin this] */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+strike{text-decoration: line-through;}
+strong{font-weight: bold;}
+ol, ul {
+  list-style: none;
+}
+*, *:before, *:after {box-sizing:  border-box !important;}
+body{
+	line-height: 1.5;
+	margin: auto;
+	float: none;
+	font-family: Arial,sans-serif;
+	font-weight: lighter;
+}
+img{
+	max-width: 100%;
+    max-height: 100%;
+	border-radius: 1px;
+}
+a {
+   outline: 0;
+}
+
+/* Code your CSS here */
+/* Like here */
+/* Right here */
+
+/* And here */
+
+nav
+{
+	background-color: #006266;
+	color: whitesmoke;
+	display:flex;
+	align-items: center;
+	margin: 2% 0% 2% 2%
+}
+
+nav p
+{
+	display: flex;
+	padding-left: 1%;
+	font-weight: bold;
+	font-size: 30px;
+}
+nav ul
+{
+	display: flex;
+	padding-left: 80%;
+}
+
+nav ul li
+{
+	display: inline-block;
+	padding: 5px;
+	width: 60px;
+}
+
+body
+{
+	background-color: #006266;
+	color: whitesmoke;
+	text-align: center;
+	
+}
+
+header
+{
+	position: fixed;
+	background-color: #006266;
+	width: 100%;
+}
+h3
+{
+	color: black;
+}
+
+.row
+{
+	padding-top: 5%;
+	width: 100%;
+	background-color: whitesmoke;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row .col
+{
+	width: 360px;
+	height: 270px;
+	margin: 2% 1% 1% 1%; 
+}
+
+
+nav ul li:hover
+{
+	cursor: pointer;
+	background-color: whitesmoke;
+	color: #006266;
+	border-radius: 3px;
+}
+
+@media screen and (max-width: 992px) {
+	.row .col
+	{
+		width: 370px;
+		padding-left: 5%;
+		margin-bottom: 5%;
+	}
+	nav ul 
+	{
+		padding-left: 60%;
+	}
+	.row
+	{
+		padding-top : 12%;
+	}
+
+}
+@media screen and (max-width: 768px) {
+	nav ul 
+	{
+		padding-left: 50%;
+	}
+	.row .col
+	{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	.row
+	{
+		padding-top : 20%;
+	}
+}

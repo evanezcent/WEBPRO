@@ -1,0 +1,50 @@
+  {
+        "title" : "CV Tama",
+        "bio" : 
+        [
+            {
+                "name" : "Pratama Yoga Santosa",
+                "job" : "Mahasiswa S1 Informatika - Telkom University",
+                "birth" : "Sragen 16 desember 1999",
+                "profile" : "Saya Seorang Muslim, Laki -  Laki, dan Belum Menikah",
+                "phone" : "082226651838",
+                "mail" : "pratamayo16@gmail.com"
+            }
+        ],
+        "sosmed" : 
+        [
+            {
+                "ig" : "http://instagram.com/pratamays",
+                "github" : "http://github.com/pratamays"
+            }
+        ],
+        "prof_pict" : "img/boy.png",
+        "education" : 
+        [
+            {
+                "sd" : "SDN Pilangsari 1",
+                "start_year1" : "2005",
+                "end_year1" : "2011",
+                "smp" : "SMP N 2 Sragen",
+                "start_year2" : "2011",
+                "end_year2" : "2014",
+                "sma" : "SMA N 1 Sragen",
+                "start_year3" : "2014",
+                "end_year3" : "2017",
+                "univ" : "Telkom University",
+                "start_year4" : "2017",
+                "end_year4" : "Now"
+            }
+        ],
+        "skills":
+        [
+            {
+                "satu" : "Pascal, Java, C++",
+                "persen1" : "60",
+                "dua" : "HTML, CSS, JavaScript",
+                "persen2" : "40",
+                "tiga" : "Python",
+                "persen3" : "30"
+            }
+        ]
+    }
