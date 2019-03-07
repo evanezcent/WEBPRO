@@ -141,33 +141,40 @@
                     <div class="jumbotron jumbotron-fluid bg-light" style="height:520px">
                         <div  style="margin-top:160px">
                             <!--Bootstrap Button-->
-                            <div style="width: 200px;" onclick="openForm()">PANGGIL FORM</div>
-                            <div style="width: 200px;" onclick="openTable()">PANGGIL TABEL</div>
+                            <span class="btn-group d-flex" align="center">
+                                <div style="width: 200px;" onclick="openForm()">
+                                    <button type="button" class="btn btn-warning btn-md">PANGGIL FORM</button>
+                                </div>
+                                <div style="width: 200px;" onclick="openTable()">
+                                    <button type="button" class="btn btn-success btn-md">PANGGIL TABEL</button>
+                                </div>
+                            </span>
                         </div>
                     </div>
                  </div>
                  <div>
                     <div  class="jumbotron jumbotron-fluid bg-light" style="height:520px">
                         <!--Bootstrap Form Disini-->
+                      <form>
                         <div id="muncul1" style="display:none" >
                             <div style="width:50%">
-                                <div>Form Login</div>
-                                <div>
+                                <div class="form-group">Form Login</div>
+                                <div class="form-group">
                                     <form action="#">
-                                        <div align="Left">
-                                        <label for="email">Email address:</label>
-                                        <input type="email" id="email">
+                                        <div align="Left" class="form-group">
+                                            <label for="email">Email address:</label>
+                                            <input type="email" id="email" class="form-control">
                                         </div>
-                                        <div  align="Left">
-                                        <label for="pwd">Password:</label>
-                                        <input type="password" class="form-control" id="pwd">
+                                        <div  align="Left" class="form-group">
+                                            <label for="pwd">Password:</label>
+                                            <input type="password" class="form-control" id="pwd">
                                         </div>
-                                        <div align="Left">
-                                        <label>
-                                            <input type="checkbox"> Remember me
-                                        </label>
+                                        <div align="Left" class="form-group">
+                                            <label>
+                                                <input type="checkbox"> Remember me
+                                            </label>
                                         </div>
-                                        <button type="submit">Submit</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
                                     </form>
                                     </div> 
                                 <div>belum punya akun?<a href="#"> klik disini</a></div>
@@ -202,6 +209,7 @@
                                 </tbody>
                             </table>
                         </div>
+                      </form>
                     </div>
                  </div>
              </div>
