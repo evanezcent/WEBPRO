@@ -1,6 +1,6 @@
 # Jurnal Modul Pemrograman WEB 2018/2019 IFLAB
  
-masih on proggress sampai modul 10 insyaAllah hehe
+masih "on proggress" sampai modul 10 insyaAllah hehe
 
 update modul baru tiap minggu wkwkwk,
 
