@@ -14,12 +14,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/plotly-latest.min.js"></script><!--plot.ly library-->
     <style>
-        li.nav-item{font-weight: bold}
-        li.nav-item:hover{background-color: white;border-radius: 15px;}
-        p.titles{font-weight: bold;color: blue;margin-top: 20px}
+        li.nav-item{
+            font-weight: bold;
+        }
+        li.nav-item a{
+            color: rgb(87, 85, 85);
+        }
+        p.titles{
+            font-weight: bold;
+            color: blue;
+            margin-top: 20px
+        }
         .form-group{
             margin-bottom: 5%;
             padding: 0 5% 0 5%;
+        }
+
+        .active, li.nav-item a:hover {
+        color: black;
         }
         
     </style>
@@ -35,15 +47,15 @@
                 <!-- Navbar Toggler-->
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav active">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#" style="color: black">HOME</a>
+            <ul class="nav" id="menu">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">HOME</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#konten-a" style="color: black">KONTEN A</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#konten-a">KONTEN A</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#konten-b" style="color: black">KONTEN B</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#konten-b">KONTEN B</a>
                 </li>
             </ul>
             <form class="form-inline ml-auto" action="#">
@@ -229,7 +241,8 @@
 </body>
 <script src="script.js"></script>
 <script src="assets/grafik.js"></script>
-<script>
+
+<script> //Membuat tombol tabel dan form
     var formulir = document.getElementById("muncul1");
     var tabell = document.getElementById("muncul2");
 
@@ -243,4 +256,16 @@
         formulir.style.display="none";
     }
 </script>
+
+<script> // Membuat active menu
+    var header = document.getElementById("menu");
+    var btns = header.getElementsByClassName("nav-item");
+    for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("nav-link active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
 </html>
