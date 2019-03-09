@@ -1,47 +1,58 @@
-  {
-        "title" : "CV Tama",
-        "bio" : 
-        [
+[
+    {
+        "title": "CV Tama",
+        "bio": [
             {
-                "name" : "Pratama Yoga Santosa",
-                "job" : "Mahasiswa S1 Informatika - Telkom University",
-                "birth" : "Sragen 16 desember 1999",
-                "profile" : "Saya Seorang Muslim, Laki -  Laki, dan Belum Menikah",
-                "phone" : "082226651838",
-                "mail" : "pratamayo16@gmail.com"
+                "name": "Pratama Yoga Santosa",
+                "job": "Mahasiswa S1 Informatika - Telkom University",
+                "birth": "Sragen 16 desember 1999",
+                "profile": "Saya Seorang Muslim, Laki -  Laki, dan Belum Menikah",
+                "phone": "082226651838",
+                "mail": "pratamayo16@gmail.com"
             }
         ],
-        "sosmed" : 
-        [
+        "sosmed": [
             {
-                "ig" : "http://instagram.com/pratamays",
-                "github" : "http://github.com/pratamays"
+                "ig": "http://instagram.com/pratamays",
+                "github": "http://github.com/pratamays"
             }
         ],
-        "prof_pict" : "img/boy.png",
-        "education" : 
-        [
+        "prof_pict": "img/boy.png",
+        "education": [
             {
-                "sd" : "SDN Pilangsari 1",
-                "start_year1" : "2005",
-                "end_year1" : "2011",
-                "smp" : "SMP N 2 Sragen",
-                "start_year2" : "2011",
-                "end_year2" : "2014",
-                "sma" : "SMA N 1 Sragen",
-                "start_year3" : "2014",
-                "end_year3" : "2017",
-                "univ" : "Telkom University",
-                "start_year4" : "2017",
-                "end_year4" : "Now"
+                "school": "SDN Pilangsari 1",
+                "start_year": "2005",
+                "end_year": "2011"
+            },
+            {
+                "school": "SMP N 2 Sragen",
+                "start_year": "2011",
+                "end_year": "2014"
+            },
+            {
+                "school": "SMA N 1 Sragen",
+                "start_year": "2014",
+                "end_year": "2017"
+            },
+            {
+                "univ": "Telkom University",
+                "start_year": "2017",
+                "end_year": "Now"
             }
         ],
-        "skills":
-        [
+        "skills": [
             {
-                "namaa" : "Pascal, Java, C++",
-                "persen" : "60"
-
+                "namaa": "Pascal, Java, MySQL",
+                "persen": "50"
+            },
+            {
+                "namaa": "Python, C++, Javascript",
+                "persen": "30"
+            },
+            {
+                "namaa": "HTML, CSS",
+                "persen": "60"
             }
         ]
     }
+]
