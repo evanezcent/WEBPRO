@@ -41,11 +41,11 @@ $(document).ready(function () {
     /*-------------------------------------
         PUT YOUR $.ajax function here
     ---------------------------------------*/
-    var skills = (data) => {
-        return '<span class="elemen-title">' + data.skills.namaa + '</span>' +
+    var skill = (data) => {
+        return '<span class="elemen-title">' + data.namaa + '</span>' +
             '<div class="elementor-progress-wrapper" role="progressbar" aria-valuemin="idx" aria-valuemax="100" aria-valuenow="90" aria-valuetext="">' +
-            '<div class="elementor-progress-bar" data-max="' + data.skills.persen + '">'+'<span class ="elementor-progress-text"></span>' +
-            '<span class ="elementor-progress-percentage>' + data.skills.persen + '</span>' +
+            '<div class="elementor-progress-bar" data-max="' + data.persen + '">'+'<span class ="elementor-progress-text"></span>' +
+            '<span class ="elementor-progress-percentage>' + data.persen + '</span>' +
             '</div>' +
             '</div>';
     }
@@ -57,9 +57,11 @@ $(document).ready(function () {
         type: "Get",
         url: "js/data_1301170073.json",
         dataType: "json",
-        success: function (data) {
-            $.each(data , function (key, obj) {
-                $("#keahlian").append(skills(obj));
+        success: function (datacv) {
+            var dataS = datacv[0].skills;
+
+            $.each(dataS, function (index, obj) {
+                $("#keahlian").append(skill(obj));
             });
         }
     });
