@@ -42,12 +42,27 @@ $(document).ready(function () {
         PUT YOUR $.ajax function here
     ---------------------------------------*/
     var skill = (data) => {
-        return '<span class="elemen-title">' + data.namaa + '</span>' +
-            '<div class="elementor-progress-wrapper" role="progressbar" aria-valuemin="idx" aria-valuemax="100" aria-valuenow="90" aria-valuetext="">' +
-            '<div class="elementor-progress-bar" data-max="' + data.persen + '">'+'<span class ="elementor-progress-text"></span>' +
-            '<span class ="elementor-progress-percentage>' + data.persen + '</span>' +
+        return '<span class="elementor-title">' + data.namaa + '</span>' +
+            '<div class="elementor-progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" aria-valuetext="">' +
+            '<div class="elementor-progress-bar" data-max="' + data.persen + '">' + '<span class ="elementor-progress-text"></span>' +
+            '<span class ="elementor-progress-percentage">' + data.persen + '</span>' +
             '</div>' +
             '</div>';
+    }
+
+    var edu = (file) => {
+        return '<div class="sc_supertitle_columns_wrap sc_item_columns trx_addons_collumns_padding_bottom sc_supertitle_icon_empty_column">' +
+                    '<span class="sc_supertitle_no_icon trx_addons_inline_662132092"></span>' +
+                    '<div class="sc_supertitle_left_column trx_addons_column-8_12">' +
+                        '<div class="sc_supertitle_icon_wrap">' +
+                            '<div class="sc_supertitle_media_block"></div>' +
+                        '</div>' +
+                        '<h6 class="sc_supertitle_text">'+ file.school +'</h6>' +
+                    '</div>' +
+                    '<div class="sc_supertitle_right_column trx_addons_column-4_12>' +
+                    '<p class="sc_supertitle_text>' + file.start_year + ' to ' + file.end_year + '</p>' +
+                '</div>' +
+            '</div>'
     }
 
     /*-------------------------------------
@@ -58,10 +73,12 @@ $(document).ready(function () {
         url: "js/data_1301170073.json",
         dataType: "json",
         success: function (datacv) {
-            var dataS = datacv[0].skills;
-
-            $.each(dataS, function (index, obj) {
+            $.each(datacv[0].skills, function (index, obj) {
                 $("#keahlian").append(skill(obj));
+            });
+
+            $.each(datacv[0].education, function (index1, object) {
+                $("#sekolah").append(edu(object));
             });
         }
     });
