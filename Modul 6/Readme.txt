@@ -1,0 +1,1 @@
+Bikin database dulu dengan nama pesbuk di php myadmin, baru di import
