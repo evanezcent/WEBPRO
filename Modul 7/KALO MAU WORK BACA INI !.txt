@@ -1,0 +1,4 @@
+1. Bikin database dengan nama db7_modul7_1301170073   [utf8]
+2. Import sql nya di folder database
+3. Masukin folder xampp->htdocs, trus nyalain xampp
+4. Saran aja abis download file ini, ubah folder menjadi "MOD7", atau ubah bagian dalam codingannya sesuaikan dengan nama folder yang dibuat sekarang
