@@ -1,3 +1,1 @@
-### TIAP HARI KAMIS REPO AKAN DI PRIVATE
-
-Akan di set public secara random tergantung gue udah kelar apa belom 
+### Kemungkinan di update paling cepat hari sabtu, paling lamanya gatau :v
