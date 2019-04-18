@@ -35,20 +35,30 @@ CREATE TABLE `jurusan` (
   `akreditasi` varchar(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- user
+CREATE TABLE `USER` (
+  `username` varchar(10) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `fotoProfil` varchar(150),
+  `bio` varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Dumping data for table `jurusan`
 --
 
-INSERT INTO `jurusan` (`id_jurusan`, `nama_jurusan`, `fakultas`, `akreditasi`) VALUES
-(1, 'S1 Informatika', 'Fakultas Informatika', 'A'),
-(2, 'S1 Ilmu Komputasi', 'Fakultas Informatika', 'B'),
-(3, 'S1 Teknologi Informasi', 'Fakultas Informatika', 'C'),
-(4, 'S1 Teknik Elektro', 'Fakultas Teknik Elektro', 'A'),
-(5, 'S1 Teknik Telekomunikasi', 'Fakultas Teknik Elektro', 'A'),
-(6, 'S1 Teknik Fisika', 'Fakultas Teknik Elektro', 'B'),
-(7, 'S1 Sistem Komputer', 'Fakultas Teknik Elektro', 'B'),
-(8, 'S1 Teknik Industri', 'Fakultas Rekayasa Industr', 'A'),
-(9, 'S1 Sistem Informasi', 'Fakultas Rekayasa Industr', 'A');
+-- INSERT INTO `jurusan` (`id_jurusan`, `nama_jurusan`, `fakultas`, `akreditasi`) VALUES
+-- (1, 'S1 Informatika', 'Fakultas Informatika', 'A'),
+-- (2, 'S1 Ilmu Komputasi', 'Fakultas Informatika', 'B'),
+-- (3, 'S1 Teknologi Informasi', 'Fakultas Informatika', 'C'),
+-- (4, 'S1 Teknik Elektro', 'Fakultas Teknik Elektro', 'A'),
+-- (5, 'S1 Teknik Telekomunikasi', 'Fakultas Teknik Elektro', 'A'),
+-- (6, 'S1 Teknik Fisika', 'Fakultas Teknik Elektro', 'B'),
+-- (7, 'S1 Sistem Komputer', 'Fakultas Teknik Elektro', 'B'),
+-- (8, 'S1 Teknik Industri', 'Fakultas Rekayasa Industr', 'A'),
+-- (9, 'S1 Sistem Informasi', 'Fakultas Rekayasa Industr', 'A');
 
 -- --------------------------------------------------------
 
