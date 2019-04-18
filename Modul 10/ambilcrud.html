@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test crud NODEJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<H1>LIHAT SEMUA ISINYA DI CONSOLE</H1>
+
+<button onclick="get_all_manusia()">Get All Manusia</button>
+<button onclick="find_manusia_html()">Cari Manusia</button>
+<button onclick="tambah_manusia_html()">Tambah Manusia</button>
+<button onclick="update_manusia_html()">Update Manusia</button>
+<button onclick="delete_manusia_html()">Delete Manusia</button>
+<br>
+<br>
+<div id="isi_html"></div>
+
+
+
+<script>
+    var baseURL = "http://localhost:3000";
+
+    //get
+    function get_all_manusia(){
+        $.getJSON(baseURL + "/get_all_manusia", (data) => {
+            console.log(data)
+        })
+    }
+
+    //find
+    function find_manusia_html(){
+        document.getElementById("isi_html").innerHTML = "<label id=\"update_manusia\">Input ID manusia : </label>\n" +
+            "<input name=\"update_manusia\" id=\"update_manusia1\">\n" +
+            "<br>"+
+            "<button onclick=\"button_find()\">Cari</button>"
+    }
+
+    function find_manusia(id){
+        $.getJSON(baseURL + "/find_manusia/"+id, (data) => {
+            console.log(data)
+        })
+    }
+
+    function button_find(){
+        var id = document.getElementById("update_manusia1").value
+        find_manusia(id)
+    }
+    //end find
+
+    //tambah
+    function tambah_manusia_html(){
+        document.getElementById("isi_html").innerHTML = "<label>Input Nama :</label>\n" +
+            "<input id=\"tambah_nama\">\n" +
+            "<br>\n" +
+            "<label>Input Umur :</label>\n" +
+            "<input id=\"tambah_umur\">\n" +
+            "<br>\n" +
+            "<button onclick=\"button_tambah()\">Tambah</button>\n"
+    }
+
+    function button_tambah(){
+        var nama = document.getElementById("tambah_nama").value
+        var umur = document.getElementById("tambah_umur").value
+
+        $.post(baseURL+"/tambah_manusia",
+            {
+                nama_manusia: nama,
+                umur: umur
+            },
+            function(data, status){
+                alert("Status: " + status);
+            });
+    }
+    //end tambah
+
+    //update
+    function update_manusia_html(){
+        get_all_manusia()
+        document.getElementById("isi_html").innerHTML = "<label>Input id :</label>\n" +
+            "<input id=\"update_id_manusia\">\n" +
+            "<br>\n" +
+            "<label>Input Nama :</label>\n" +
+            "<input id=\"update_nama_manusia\">\n" +
+            "<br>\n" +
+            "<label>Input Umur :</label>\n" +
+            "<input id=\"update_umur_manusia\">\n" +
+            "<br>\n" +
+            "<button onclick=\"button_update()\">Update</button>"
+    }
+
+    function button_update(){
+        var id = document.getElementById("update_id_manusia").value
+        var nama = document.getElementById("update_nama_manusia").value
+        var umur = document.getElementById("update_umur_manusia").value
+
+        $.post(baseURL+"/update_manusia",
+            {
+                id_manusia: id,
+                nama_manusia: nama,
+                umur: umur
+            },
+            function(data, status){
+                alert("Status: " + status);
+            });
+    }
+    //end update
+
+    //delete
+    function delete_manusia_html(){
+        get_all_manusia()
+        document.getElementById("isi_html").innerHTML = "<label>Input id :</label>\n" +
+            "<input id=\"delete_id_manusia\">\n" +
+            "<br>\n" +
+            "<button onclick=\"button_delete()\">Delete</button>"
+    }
+
+    function button_delete(){
+        var id = document.getElementById("delete_id_manusia").value
+
+        $.post(baseURL+"/delete_manusia",
+            {
+                id_manusia: id
+            },
+            function(data, status){
+                alert("Status: " + status);
+            });
+        get_all_manusia()
+
+    }
+    //end delete
+
+
+
+</script>
+</body>
+</html>
